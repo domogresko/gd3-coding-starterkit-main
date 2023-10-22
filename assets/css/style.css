@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #dd497d;
+}
+
+.text-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+
+.bottom-text {
+  position:absolute ;
+  left: 3vh;
+  top: 90vh;
+}
+
+.text {
+  position:absolute ;
+  font-size: 20px;
+  color: #4e471e;
+  transform-origin: center center;
+  transform: rotate(calc(45deg - 90deg * var(--rotation)));
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 5;
+  font-family: 'YourCustomFont', sans-serif;
+  background-color: #FFFF00;
+  padding: 4px;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+
+.text:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); 
+  transform: scale(1.1); 
+}
+
+.text.hovered {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.random-image {
+  position: absolute;
+  width: 20vh;
+}
+
+.cross {
+  position: fixed;
+  top: 50px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 50vw;
+  height: 500vh;
+  position: absolute;
+  z-index: 2; 
+  overflow: hidden; 
+}
+
+.horizontal-bar, .vertical-bar {
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.horizontal-bar {
+  width: 90%;
+  height: 100px;
+  left: 3%;
+  right: 3%;
+  background-color: #b51b2d;
+  position: absolute;
+  top: 6%;
+  transform: translateY(-50%);
+}
+
+.vertical-bar {
+  width: 100px;
+  top: 0.5%;
+  height: 99%;
+  bottom: 0.8%;
+  background-color: #b51b2d;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vertical-bar {
+  border: 36px solid;
+  border-image: url('assets/images/border.png') 27 / 30px 30px 30px 30px / 20px 20px 20px 20px
+    round;
+}
+
+.horizontal-bar {
+  border: 36px solid;
+  border-image: url('assets/images/border.png') 27 / 30px 30px 30px 30px / 20px 20px 20px 20px
+    round;
+}
+
+
+.the-svg {
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  height: 18vh; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.holy-svg {
+  position: fixed;
+  top: 1vw;
+  left: 56vw;
+  height: 18vh; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.bible-svg {
+  position: fixed;
+  top: 60vh;
+  left: 1vw;
+  height: 18vh; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.star3-svg {
+  position: fixed;
+  top: 60vh;
+  left: 56vw;
+  height: 10vh;
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+
+.star3-2-svg {
+  position: absolute;
+  top: 110vh;
+  left: 56vw;
+  height: 10vh; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.text1 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 108vh;
+  left: 64vw;
+  height: 10vh; 
+  z-index: 1; 
+}
+
+.text2 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 180vh;
+  left: 64vw;
+  height: 10vh; 
+  z-index: 1; 
+}
+
+.text3 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 250vh;
+  left: 64vw;
+  height: 10vh; 
+  z-index: 1; 
+}
+
+.text4 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 320vh;
+  left: 64vw;
+  height: 10vh; 
+  z-index: 1; 
+}
+
+.text5 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 420vh;
+  left: 64vw;
+  height: 10vh;
+  z-index: 1; 
+}
+
+.text6 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 499vh;
+  left: 2vw;
+  z-index: 1; 
+}
+
+.text7 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 499vh;
+  left: 64vw;
+  z-index: 2;
+}
+
+.text8 {
+  font-family: 'YourCustomFont', sans-serif;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 499vh;
+  left: 92vw;
+  z-index: 1; 
+}
+
+.different-font {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic; 
+}
+
+.different-font2 {
+  font-size: 13px;
+}
+
+#heart {
+  position: absolute;
+  top: 128vh;
+  left: 64vw;
+  width: 3vw;
+  height: auto;
+  z-index: 1;
+}
+
+
+
+
+.ellipse-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 400vh;
+  left: 39vw;
+  width: 22vw; 
+  height: 55vh; 
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.ellipse-container img {
+  height: 100%;
+  width: auto;
+  display: block;
+}

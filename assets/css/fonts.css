@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'YourCustomFont';
+  src: url('G2-Erika-Regular.woff') format('woff');
+  src: url('G2-Erika-Regular.woff2') format('woff2');
+}
